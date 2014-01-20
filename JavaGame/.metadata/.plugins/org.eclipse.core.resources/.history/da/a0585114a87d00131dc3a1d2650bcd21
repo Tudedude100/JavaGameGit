@@ -1,0 +1,21 @@
+package io.github.Tudedude100;
+
+import javax.swing.JFrame;
+
+public class MainMenu extends JFrame{
+	
+	JFrame frame;
+	
+	public MainMenu() {
+		addButtons();
+		addActions();
+	}
+	
+	private void addButtons() {
+		
+	}
+	
+	private void addActions() {
+		
+	}
+}

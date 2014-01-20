@@ -1,0 +1,26 @@
+package io.github.Tudedude100;
+
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class Game extends gameLoop {
+	
+	public int w = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public int h = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	public void init(){
+		setSize(w, h);
+		Thread th = new Thread(this);
+		th.start();
+		offscreen = createImage(w, h);
+		d = offscreen.getGraphics();
+	}
+	public void paint(Graphics g){
+		g.clearRect(0, 0, w, h);
+		d.drawOval(x, y, 20, 20);
+		
+	}
+	public void update(Graphics g){
+		paint(g);
+	}
+}

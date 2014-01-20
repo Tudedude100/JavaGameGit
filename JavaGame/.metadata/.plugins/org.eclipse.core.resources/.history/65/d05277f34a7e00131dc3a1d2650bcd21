@@ -1,0 +1,47 @@
+package io.github.Tudedude100;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
+
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel implements Runnable, KeyListener{
+	
+	public static final int WIDTH = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public static final int HEIGHT = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	private Thread thread;
+	private boolean running;
+	private int FPS = 60;
+	private long targetTime = 1000 / FPS;
+	
+	private BufferedImage image;
+	private Graphics2D g;
+	
+	public GamePanel() {
+		super();
+		setPreferredSize(new Dimension(10, 10));
+		setFocusable(true);
+		requestFocus();
+	}
+	
+	public void addNotify() {
+		super.addNotify();
+		if(thread == null){
+			thread = new Thread(this);
+			addKeyListener(this);
+			thread.start();
+		}
+	}
+	
+	private void init() {
+		image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
+	}
+	
+	public void run() {
+		
+	}
+
+}

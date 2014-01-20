@@ -1,0 +1,11 @@
+package io.github.Tudedude100;
+
+import javax.swing.JPanel;
+
+public class MainMenuKeying extends JPanel {
+	
+	public void onKeyPress(){
+		
+	}
+
+}

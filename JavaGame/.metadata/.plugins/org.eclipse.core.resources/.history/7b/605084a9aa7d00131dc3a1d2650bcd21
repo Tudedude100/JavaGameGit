@@ -1,0 +1,19 @@
+package io.github.Tudedude100;
+
+import javax.swing.JFrame;
+
+public class Main {
+	
+	public static Display f = new Display();
+	public static int w = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public static int h = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	public static void main(String args[]){
+		f.setSize(w, h);
+		f.setResizable(true);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setTitle("Java Game");
+		f.setLocationRelativeTo(null);
+		f.setAlwaysOnTop(true);
+	}
+}

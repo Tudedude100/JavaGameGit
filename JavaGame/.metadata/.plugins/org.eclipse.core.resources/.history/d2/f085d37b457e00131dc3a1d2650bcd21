@@ -1,0 +1,10 @@
+package io.github.Tudedude100;
+
+import java.applet.Applet;
+
+public class gameLoop extends Applet implements Runnable{
+	
+	public void run(){
+		
+	}
+}

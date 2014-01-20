@@ -1,0 +1,12 @@
+package io.github.Tudedude100;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Keying  extends JPanel{
+	
+	public Keying(Display f, Images i){
+		
+	}
+	
+}

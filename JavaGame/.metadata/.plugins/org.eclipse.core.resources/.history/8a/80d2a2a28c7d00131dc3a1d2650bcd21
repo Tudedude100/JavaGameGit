@@ -1,0 +1,34 @@
+package io.github.Tudedude100;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Keying  extends JPanel{
+	
+	public Rectangle character;
+	
+	public int charW = 24;
+	public int charH = 48;
+	
+	public Keying(Display f, Images i){
+		character = new Rectangle(180, 180, charW, charH);
+		
+		f.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e){
+				if(e.getKeyCode() == KeyEvent.VK_W){
+					character.y++;
+				}
+			}
+		})
+		
+	}
+	
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+		this.setBackground(Color.CYAN);
+		g.setColor(Color.BLACK);
+		g.fillRect(character.x, character.y, character.width, character.height);
+	}
+}

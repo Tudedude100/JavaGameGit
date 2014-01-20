@@ -1,0 +1,13 @@
+package io.github.Tudedude100;
+
+import java.applet.Applet;
+
+public class Game extends Applet {
+	
+	public int w = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public int h = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	public void init(){
+		setSize(w, h);
+	}
+}

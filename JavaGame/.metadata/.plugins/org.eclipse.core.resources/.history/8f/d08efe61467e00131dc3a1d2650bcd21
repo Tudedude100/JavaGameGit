@@ -1,0 +1,17 @@
+package io.github.Tudedude100;
+
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class Game extends gameLoop {
+	
+	public int w = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public int h = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	public void init(){
+		setSize(w, h);
+	}
+	public void paint(Graphics g){
+		g.fillOval(x, y, 100, 100);
+	}
+}

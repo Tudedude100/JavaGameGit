@@ -1,0 +1,25 @@
+package io.github.Tudedude100;
+
+import java.awt.*;
+
+import javax.swing.JPanel;
+
+public class GamePanel extends JPanel{
+	
+	public static final int WIDTH = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
+	public static final int HEIGHT = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
+	
+	private Thread thread;
+	private boolean running;
+	private int FPS = 60;
+	private long targetTime = 1000 / FPS;
+	
+	private BufferedImage image;
+	private Graphics2D g;
+	
+	public GamePanel() {
+		super();
+		setPreferredSize(new Dimension(10, 10));
+	}
+
+}

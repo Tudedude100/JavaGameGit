@@ -1,0 +1,21 @@
+package io.github.Tudedude100;
+
+import java.applet.Applet;
+
+public class gameLoop extends Applet implements Runnable{
+	
+	public int x, y;
+	
+	public void run(){
+		while(true){
+			x++;
+			System.out.println("Success");
+			repaint();
+			try {
+				Thread.sleep(20);
+			}catch(InterruptedException e){
+				e.printStackTrace();
+			}
+		}
+	}
+}

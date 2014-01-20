@@ -1,0 +1,14 @@
+package io.github.Tudedude100;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Keying  extends JPanel{
+	
+	public Rectangle character;
+	
+	public Keying(Display f, Images i){
+		character = new Rectangle(180, 180);
+	}
+	
+}

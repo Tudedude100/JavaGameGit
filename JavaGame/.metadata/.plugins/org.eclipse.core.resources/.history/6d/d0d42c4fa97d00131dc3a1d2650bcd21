@@ -1,0 +1,81 @@
+package io.github.Tudedude100;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Keying  extends JPanel{
+	
+	public Rectangle character;
+	
+	public int charW = 24;
+	public int charH = 48;
+	
+	public boolean right = false;
+	public boolean left = false;
+	public boolean up = false;
+	public boolean down = false;
+	
+	public Keying(Display f, Images i){
+		character = new Rectangle(180, 180, charW, charH);
+		
+		f.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e){
+				if(e.getKeyCode() == KeyEvent.VK_D){
+					right = true;
+					character.x += 2;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_A){
+					left = true;
+					character.x -=2;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_W){
+					up = true;
+					character.y -=2;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_S){
+					down = true;
+					character.y +=2;
+				}
+			}
+			
+			public void keyReleased(KeyEvent e){
+				if(e.getKeyCode() == KeyEvent.VK_D){
+					right = false;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_A){
+					left = false;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_W){
+					up = false;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_S){
+					down = false;
+				}
+			}
+		});
+		
+	}
+	
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+		this.setBackground(Color.CYAN);
+		g.setColor(Color.BLACK);
+		g.fillRect(character.x, character.y, character.width, character.height);
+		
+		if(right){
+			character.x += 2;
+		}
+		if(left){
+			character.x -= 2;
+		}
+		if(up){
+			character.y -= 2;
+		}
+		if(down){
+			character.y += 2;
+		}
+		repaint();
+	}
+}

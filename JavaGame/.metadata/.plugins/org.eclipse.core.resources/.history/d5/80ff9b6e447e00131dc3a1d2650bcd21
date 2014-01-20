@@ -1,0 +1,16 @@
+package io.github.Tudedude100;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class MainMenuImages extends JPanel {
+	
+	public int w = Main.w;
+	public int h = Main.h;
+	
+	public MainMenuImages(){
+		this.setBackground(Color.BLACK);
+	}
+
+}

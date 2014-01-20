@@ -1,0 +1,21 @@
+package io.github.Tudedude100;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JPanel;
+
+public class MainMenuKeying extends JPanel {
+	
+	public MainMenuKeying(final MainMenu m, MainMenuImages i) {
+		m.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e){
+				if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
+					WindowEvent windowClosing = new WindowEvent (m, WindowEvent.WINDOW_CLOSING);
+				}
+			}
+		});
+	}
+
+}
