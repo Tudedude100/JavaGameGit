@@ -1,8 +1,14 @@
-STORY: A crazed faction of chemists blows up the world. One person survives, along with some other evil people. They have to fight through the remaining 
-gangs, science experiments, and other assorted baddies left in the world, to get to a spaceship. Spaceship leads to nearby terraformed planet, which 
-they can survive on.
+STORY: A crazed faction of chemists blows up the world. One person survives, along with some other evil people. They have 
+to fight through the remaining gangs, science experiments, and other assorted baddies left in the world to get to a 
+spaceship. Staggered throughout the levels and worlds, he meets the Chemist, a chemist from the faction of world 
+destroyers who feels bad about messing up, so he fights for him, and the Marksman, an elite long-range soldier from an ancient guild of highly skilled soldiers. Spaceship leads to nearby terraformed planet, which they can survive on.
 
-Main Character:
+Three Characters:
+  Soldier - Starting Main Character:
+    Weapons:
+      Plasma Sword: Main attack is slash, but has a 1/8 chance to jab, for higher range and damage. Has a chance to split                     an atom, instantly killing the foe.
+      Ray Gun: A light, ranged weapon that takes time to charge up.
+    Story: Left behind, with all of his family dead, this cyborg super-soldier has just one mission. He needs to get off              of the planet with his life. Fighting
 
 Sequel Ideas:
 Finds out old planet is going to explode corrupted materials out in to space. Group needs to get together and plant a bio-bomb to stop it.
